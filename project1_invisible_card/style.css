@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    font-family: 'Josefin Sans', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(image/bg.jpg) no-repeat center;
+}
+
+.card-wrapper {
+    width: 400px;
+    height: 555px;
+    /* border: 1px solid white; */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(image/bg.jpg) no-repeat center;
+    border-radius: 10px;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.card-wrapper:hover {
+    box-shadow: 0 5px 28px #fff;
+}
+
+.card {
+    display: none;
+}
