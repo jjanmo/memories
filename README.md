@@ -9,3 +9,6 @@
 - Result
   
     ![ResultView](result/invisibleCard.gif)
+
+### Extra Project1 : Card Open 
+> [YouTube 참고](https://www.youtube.com/watch?v=hZqj_8_m1gE&list=PLpOejIRxf6_dbtN2j47ME1txCF25LR4ti&index=2&t=674s)

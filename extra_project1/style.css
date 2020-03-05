@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Slab', serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)); */
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.card {
+    width: 250px;
+    height: 300px;
+    position: relative;
+    perspective: 1000px;
+    /* background-color: #eee; */
+}
+
+.left-side {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #27ae60;
+    transform: rotateY(0deg);
+    transform-origin: left;
+    transition: transform 1.5s;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.left-side::after {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.right-side {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #3498db;
+    transform: rotateY(0deg);
+    transform-origin: right;
+    transition: transform 1.5s;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.back-side {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #e67e22;
+    z-index: -1;
+    transform: translateZ(-300px);
+    transition: z-index 0.5s step-end, transform 1.5s;
+}
+
+.card:hover .left-side {
+    transform: rotateY(-360deg);
+}
+
+.card:hover .right-side {
+    transform: rotateY(360deg);
+}
+.card:hover .back-side {
+    transform: translateZ(0);
+    z-index: 1;
+}

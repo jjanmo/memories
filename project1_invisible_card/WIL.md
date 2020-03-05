@@ -51,7 +51,7 @@ vmax : 1/100th of the maximum value between the height and the width of the view
 ```
 - 수직/수평 정렬을 하고 싶은 부모 요소에 적용함
 - 부모 요소의 width와 height를 기준으로 정렬하게 됨
-- 주의 : 만약에 부모 요소 height가 없는 경우에는 요소안의 content양만큼만 height를 갖기때문에 마치 정렬이 안된것처럼 보일 수 있음 -> 부모요소의 height를 설정해주면 됨  
+- 주의 : 만약에 부모 요소 height가 없는 경우에는 요소안의 content양만큼만 height를 갖기때문에 마치 정렬이 안된것처럼 보일 수 있음 -> 부모요소의 height를 설정해주면 됨(ex. height: 100vh)  
 
 3. position absolute 사용 **⭐추천**
 ```CSS
