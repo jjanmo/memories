@@ -8,7 +8,7 @@
     width: 100vw;
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url(image/bg.jpg) no-repeat center;
+        url(../image/bg.jpg) no-repeat center;
 }
 
 .card-wrapper {
@@ -20,7 +20,7 @@
     top: 50%;
     transform: translate(-50%, -50%);
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url(image/bg.jpg) no-repeat center;
+        url(../image/bg.jpg) no-repeat center;
     border-radius: 10px;
     transition: box-shadow 0.5s ease-in-out;
     overflow: hidden;

@@ -5,17 +5,39 @@
 }
 
 body {
-    font-family: 'Josefin Slab', serif;
+    font-family: 'Mountains of Christmas', cursive;
+    background-image: linear-gradient(
+        to bottom,
+        #baf8f6,
+        #bef6fc,
+        #c4f3ff,
+        #ccf0ff,
+        #d4edff,
+        #dbedff,
+        #e2eefe,
+        #e8effd,
+        #eff3fd,
+        #f5f6fe,
+        #fbfbfe,
+        #ffffff
+    );
 }
 
 .container {
     width: 100%;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)); */
-    background-color: rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 4rem;
+    color: #ea4630;
+    text-shadow: 2px 2px 15px #bdc3c7;
 }
 
 .card {
@@ -23,7 +45,13 @@ body {
     height: 300px;
     position: relative;
     perspective: 1000px;
-    /* background-color: #eee; */
+}
+
+.pattern {
+    background-color: #fff;
+    background-image: linear-gradient(90deg, rgba(243, 242, 242, 0.2) 50%, transparent 50%),
+        linear-gradient(rgba(0, 0, 0, 0.5) 50%, transparent 50%);
+    background-size: 50px 50px;
 }
 
 .left-side {
@@ -32,16 +60,29 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #27ae60;
+    background-color: #bb2528;
     transform: rotateY(0deg);
     transform-origin: left;
     transition: transform 1.5s;
-    border-top: 2px solid white;
-    border-right: 2px solid white;
-    border-bottom: 2px solid white;
+    border-width: 2px 2px 2px 0;
+    border-color: white;
+    border-style: solid;
+    backface-visibility: hidden;
 }
 
-.left-side::after {
+.left-back {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #165b33;
+    transform: rotateY(0deg);
+    transform-origin: left;
+    transition: transform 1.5s;
+}
+
+.left-side::before {
     position: absolute;
     top: 50%;
     right: 0;
@@ -59,13 +100,38 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: #3498db;
+    background-color: #bb2528;
     transform: rotateY(0deg);
     transform-origin: right;
     transition: transform 1.5s;
-    border-top: 2px solid white;
-    border-left: 2px solid white;
-    border-bottom: 2px solid white;
+    border-width: 2px 0 2px 2px;
+    border-color: white;
+    border-style: solid;
+    backface-visibility: hidden;
+}
+
+.right-back {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #f8b229;
+    transform: rotateY(0deg);
+    transform-origin: right;
+    transition: transform 1.5s;
+}
+
+.right-side::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
 }
 
 .back-side {
@@ -78,16 +144,52 @@ body {
     z-index: -1;
     transform: translateZ(-300px);
     transition: z-index 0.5s step-end, transform 1.5s;
+    border-radius: 25%;
+    background-image: url(../image/christmas.gif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
 }
 
-.card:hover .left-side {
-    transform: rotateY(-360deg);
+.card:hover .left-side,
+.card:hover .left-back {
+    transform: rotateY(-180deg);
 }
 
-.card:hover .right-side {
-    transform: rotateY(360deg);
+.card:hover .right-side,
+.card:hover .right-back {
+    transform: rotateY(+180deg);
 }
+
 .card:hover .back-side {
     transform: translateZ(0);
     z-index: 1;
+}
+
+.tree-container {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+.tree {
+    width: 0;
+    height: 0;
+    border-bottom: 6rem solid #2e7d32;
+    border-left: 6rem solid transparent;
+    border-right: 6rem solid transparent;
+}
+
+.log {
+    position: absolute;
+    bottom: -65px;
+    left: 35%;
+    z-index: -1;
+    width: 50px;
+    height: 70px;
+    background-color: #795548;
+    border-width: 0 4px 4px 4px;
+    border-color: #a98274;
+    border-style: solid;
+    border-radius: 5px;
 }
