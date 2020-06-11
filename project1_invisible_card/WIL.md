@@ -58,7 +58,7 @@ vmax : 1/100th of the maximum value between the height and the width of the view
   position : absolute;  
   top : 50%
   left : 50%
-  transform : transition(-50%, -50%);
+  transform : translate(-50%, -50%);
 ```
 - 특별한 기준이 없을 경우, 문서 전체를 기준으로 한가운데 정렬을 하게됨
 - 특정 부모요소 안에서 가운데 정렬을 하고싶다면, 그 요소를 `position : relative`를 설정해주면 됨
