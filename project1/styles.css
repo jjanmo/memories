@@ -8,7 +8,8 @@
   width: 100vw;
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/assets/bg.jpg) no-repeat center;
+    url(/assets/prison-break.jpg) no-repeat;
+  background-size: cover;
 }
 
 .card-wrapper {
@@ -18,8 +19,6 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/assets/bg.jpg) no-repeat center;
   border-radius: 10px;
   transition: box-shadow 0.5s ease-in-out;
   overflow: hidden;
@@ -63,8 +62,8 @@
   align-items: center;
   background: linear-gradient(
     190deg,
-    rgba(21, 199, 30, 0.8) 50%,
-    rgba(233, 67, 67, 0.8) 0
+    rgba(105, 189, 234, 0.8) 50%,
+    rgba(17, 38, 82, 0.8) 0
   );
   border-radius: 10px;
   position: absolute;
@@ -93,7 +92,7 @@ h1 {
   color: white;
   text-transform: uppercase;
   letter-spacing: 2px;
-  background: linear-gradient(#00b894, #88cab8);
+  background: linear-gradient(#e3d4a4, #897d58);
   padding: 5px;
   width: 80%;
   box-sizing: border-box;
@@ -116,11 +115,12 @@ p i {
   color: #fff;
 }
 p i:first-child {
-  top: -0.5em;
-  left: -1.1em;
+  top: -10px;
+  left: -22px;
 }
 p i:last-child {
-  left: 2.9em;
+  bottom: -5px;
+  right: 10px;
 }
 
 .card-icon-link {
@@ -152,11 +152,11 @@ ul li {
 }
 
 li:hover {
-  border: 1px solid #1b5cf5;
+  border: 1px solid #b19a8f;
 }
 
 li:hover .card-icon {
-  color: #1b5cf5;
+  color: #b19a8f;
 }
 
 .card-btn {
