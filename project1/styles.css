@@ -181,3 +181,21 @@ li:hover .card-icon {
 .card-btn:active {
   transform: scale(1.05);
 }
+
+.floating-nav {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  width: 80px;
+  height: 30px;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  opacity: 0.5;
+}
+
+.fa-house-user,
+.fa-github {
+  color: white;
+}
