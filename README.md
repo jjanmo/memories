@@ -11,7 +11,7 @@
 
 > 유데미의 [HTML, CSS, JavaScript - Build 6 Creative Projects](https://www.udemy.com/course/html-css-javascript-course-build-6-creative-projects/) 강좌를 실습하며 기록한 공간입니다.
 
-> [Demo]()
+> [Demo](https://jjanmo.github.io/six-creative-projects/)
 
 ## Projects
 
