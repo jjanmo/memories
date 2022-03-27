@@ -9,12 +9,18 @@ body {
 .wrapper {
   width: 100%;
   height: 100vh;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('../assets/marvel.jpeg') no-repeat;
   background-size: cover;
 }
-
-.nav {
+.hamberger-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -24,6 +30,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
 .logo {
   width: 80px;
   height: 80px;
@@ -81,7 +88,7 @@ body {
   width: 250px;
   height: 70px;
   color: #fefefe;
-  background: linear-gradient(#ec1c23, #50040d);
+  background: linear-gradient(#ec1c23, #970b1c);
   transform: rotateX(70deg) rotateZ(30deg);
   transform-style: preserve-3d;
   transition: transform 0.5s;
@@ -93,7 +100,7 @@ body {
   content: '';
   width: 100%;
   height: 10px;
-  background-color: #4d030c;
+  background-color: #970b1c;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -110,4 +117,8 @@ body {
   right: 0;
   transform: rotateY(-90deg);
   transform-origin: right;
+}
+
+.hidden {
+  display: none;
 }
