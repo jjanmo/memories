@@ -8,7 +8,7 @@
   width: 100vw;
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/assets/prison-break.jpg) no-repeat;
+    url(../assets/prison-break.jpg) no-repeat;
   background-size: cover;
 }
 
