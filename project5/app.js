@@ -20,7 +20,6 @@ const handleClickButton = (e) => {
 
 const handleClickPicture = (e) => {
   const target = e.target.parentNode;
-  console.log(target);
   target.classList.remove('show');
 };
 
