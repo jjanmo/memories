@@ -1,7 +1,7 @@
 # Creative CSS Projects
 
 <details>
-<summary>🗒 Logs</summary>
+<summary>학습로그 🗒</summary>
   
 `2022.03.26` |  <b>RESTART 🙏</b>
 
@@ -13,28 +13,13 @@
 
 > [Demo](https://jjanmo.github.io/six-creative-projects/)
 
-## Projects
+### WIL
 
-- Project1 : Invisible Card
+> What I Learned in these projects ⭐️
 
-  > [WIL](/docs/WIL_P1.md)
-
-- Project2 : Signup Form
-
-  > [WIL]()
-
-- Project3 : Profile Cards
-
-  > [WIL]()
-
-- Project4 : Slideshow
-
-  > [WIL]()
-
-- Project5 : 3D Hamberger Menu
-
-  > [WIL]()
-
-- Project6 : 3D Cude
-
-  > [WIL]()
+- [Project1](/docs/WIL_P1.md)
+- [Project2](/docs/WIL_P2.md)
+- [Project3](/docs/WIL_P3.md)
+- [Project4](/docs/WIL_P4.md)
+- [Project5](/docs/WIL_P5.md)
+- [Project6](/docs/WIL_P6.md)
