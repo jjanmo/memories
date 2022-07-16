@@ -181,3 +181,18 @@ body {
   background: url(../assets/universe4.jpg) no-repeat 0 -18vw;
   background-size: cover;
 }
+
+/* my links */
+.my-links {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  font-size: 25px;
+  padding: 1rem;
+}
+.fa-house-user,
+.fa-github {
+  color: white;
+  margin: 0 5px;
+}
