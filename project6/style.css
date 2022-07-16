@@ -16,10 +16,10 @@ body {
   );
 }
 .container {
-  width: 48vw;
-  height: 24vw;
+  width: 42vw;
+  height: 27vw;
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -41,10 +41,10 @@ body {
   background-color: rgb(0, 0, 0);
 }
 .arrow-left {
-  left: -20%;
+  left: -30%;
 }
 .arrow-right {
-  right: -20%;
+  right: -30%;
 }
 .fas {
   color: white;
@@ -52,7 +52,7 @@ body {
   pointer-events: none;
 }
 .control.play {
-  top: 125%;
+  top: 120%;
   right: 0;
 }
 .fa-play {
@@ -64,8 +64,7 @@ body {
 .scene {
   width: 100%;
   height: 100%;
-  background-color: aquamarine;
-  perspective: 2800px;
+  perspective: 2500px;
 }
 .cube {
   width: 100%;
@@ -77,32 +76,95 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(200, 200, 0, 0.5);
   font-size: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+/* 
+21vw씩 translate시키는 이유는 
+위에서 봤을때 42vw의 정사각형 큐브가 되는데
+이에 해당하는 공간을 앞뒤양옆으로 마련하기 위함이다. 
+*/
 .front {
-  transform: translateZ(24vw);
+  transform: translateZ(21vw);
 }
 .back {
-  transform: translateZ(-24vw) rotateY(180deg);
+  transform: translateZ(-21vw) rotateY(180deg);
 }
 .left {
-  transform: translateX(-24vw) rotateY(-90deg);
+  transform: translateX(-21vw) rotateY(-90deg);
 }
 .right {
-  transform: translateX(24vw) rotateY(90deg);
+  transform: translateX(21vw) rotateY(90deg);
 }
 .top {
-  height: 48vw;
-  background-color: rgb(17, 17, 17, 0.5);
-  transform: translateY(-24vw) rotateX(90deg);
+  height: 42vw;
+  /* 정사각형이기 때문에 전체 크기(42vw)의 반절(21vw)만큼 올려서 돌려야 딱 맞음 */
+  transform: translateY(-21vw) rotateX(90deg);
 }
 .bottom {
-  height: 48vw;
-  background-color: rgb(17, 17, 17, 0.5);
-  /* top - bottom translateY 8vw차이가 나야함 (3등분한 것) */
-  transform: translateY(-16vw) rotateX(90deg);
+  height: 42vw;
+  /* top에 주석설명에 첨가 설명 → top - bottom translateY 9vw차이가 나야함 (3등분한 것) */
+  transform: translateY(-12vw) rotateX(90deg);
+}
+
+.cube2 {
+  z-index: 10;
+}
+
+/* image1 */
+.cube1 .front {
+  background: url(../assets/universe1.jpg) no-repeat 0 0;
+  background-size: cover;
+}
+.cube2 .front {
+  background: url(../assets/universe1.jpg) no-repeat 0 -9vw;
+  background-size: cover;
+}
+.cube3 .front {
+  background: url(../assets/universe1.jpg) no-repeat 0 -18vw;
+  background-size: cover;
+}
+/* image2 */
+.cube1 .right {
+  background: url(../assets/universe2.jpg) no-repeat 0 0;
+  background-size: cover;
+}
+.cube2 .right {
+  background: url(../assets/universe2.jpg) no-repeat 0 -9vw;
+  background-size: cover;
+}
+.cube3 .right {
+  background: url(../assets/universe2.jpg) no-repeat 0 -18vw;
+  background-size: cover;
+}
+
+/* image3 */
+.cube1 .back {
+  background: url(../assets/universe3.jpg) no-repeat 0 0;
+  background-size: cover;
+}
+.cube2 .back {
+  background: url(../assets/universe3.jpg) no-repeat 0 -9vw;
+  background-size: cover;
+}
+.cube3 .back {
+  background: url(../assets/universe3.jpg) no-repeat 0 -18vw;
+  background-size: cover;
+}
+
+/* image4 */
+.cube1 .left {
+  background: url(../assets/universe4.jpg) no-repeat 0 0;
+  background-size: cover;
+}
+.cube2 .left {
+  background: url(../assets/universe4.jpg) no-repeat 0 -9vw;
+  background-size: cover;
+}
+.cube3 .left {
+  background: url(../assets/universe4.jpg) no-repeat 0 -18vw;
+  background-size: cover;
 }
