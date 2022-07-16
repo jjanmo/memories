@@ -62,5 +62,5 @@ a {
 }
 a:hover {
   color: #636e72;
-  background-color: #dfe6e9;
+  background-color: rgba(223, 230, 233, 0.5);
 }

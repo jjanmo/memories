@@ -3,3 +3,60 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+    to right top,
+    rgba(11, 29, 46, 0.9),
+    rgba(10, 32, 54, 0.9),
+    rgba(11, 35, 62, 0.9),
+    rgba(13, 38, 69, 0.9),
+    rgba(17, 40, 77, 0.9)
+  );
+}
+.container {
+  width: 48vw;
+  height: 24vw;
+  background-color: red;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  border: 2px solid white;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.control:hover {
+  background-color: rgb(0, 0, 0);
+}
+.control.left {
+  left: -4rem;
+}
+.control.right {
+  right: -4rem;
+}
+.fas {
+  color: white;
+  font-size: 1.5rem;
+  pointer-events: none;
+}
+.control.play {
+  top: 110%;
+  right: 0;
+}
+.fa-play {
+  font-size: 1.2rem;
+}
