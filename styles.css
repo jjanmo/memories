@@ -9,11 +9,11 @@ body {
 }
 .wrapper {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 10rem;
+  padding: 10rem 0;
   background: linear-gradient(-80deg, #f1c40f, #e73c7e, #3498db, #16a085);
   background-size: 250% 250%;
   animation: gradient 10s ease infinite;
@@ -43,9 +43,11 @@ ul {
   justify-content: center;
   list-style: none;
 }
+
 li {
   width: 100%;
   height: 200px;
+  padding: 10px;
   border: 1px solid #b2bec3;
   border-radius: 10px;
   font-size: 1.2rem;
@@ -63,4 +65,18 @@ a {
 a:hover {
   color: #636e72;
   background-color: rgba(223, 230, 233, 0.5);
+}
+
+@media (max-width: 1000px) {
+  ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  h1 {
+    text-align: center;
+  }
 }
