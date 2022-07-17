@@ -53,6 +53,10 @@ li {
   font-size: 1.2rem;
   overflow: hidden;
 }
+li:hover {
+  color: #636e72;
+  background-color: rgba(223, 230, 233, 0.5);
+}
 a {
   height: 100%;
   display: flex;
@@ -61,10 +65,6 @@ a {
   text-decoration: none;
   color: inherit;
   transition: 0.3s;
-}
-a:hover {
-  color: #636e72;
-  background-color: rgba(223, 230, 233, 0.5);
 }
 
 @media (max-width: 1000px) {
