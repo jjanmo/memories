@@ -44,3 +44,5 @@ const renderTitle = () => {
 };
 
 renderTitle();
+
+const test = 'commit test';
