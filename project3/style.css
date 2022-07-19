@@ -14,13 +14,35 @@ body {
 }
 
 .title {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
   width: 60%;
-  margin: 0 auto;
-  padding-top: 4rem;
   font-size: 3rem;
-  text-align: center;
   color: white;
 }
+.title::after {
+  position: absolute;
+  content: '';
+  background-color: white;
+  width: 5px;
+  height: 70px;
+  margin-left: 8px;
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .cards {
   width: 80%;
   display: flex;
