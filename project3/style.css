@@ -253,3 +253,29 @@ body {
 .fa-google-plus-g {
   color: #dd4b39;
 }
+
+/* responsive */
+@media (max-width: 500px) {
+  .title {
+    margin: 5rem 2rem;
+  }
+  .cards {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .card {
+    margin: 0 auto 3rem;
+  }
+}
+@media (max-width: 1600px) {
+  .title {
+    margin: 5rem 2rem;
+  }
+  .cards {
+    flex-wrap: wrap;
+  }
+  .card {
+    flex-shrink: 0;
+    margin: 0 auto 3rem;
+  }
+}
