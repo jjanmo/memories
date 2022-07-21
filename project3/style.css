@@ -279,3 +279,17 @@ body {
     margin: 0 auto 3rem;
   }
 }
+
+/* my links */
+.my-links {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+}
+.my-links .fa-house-user,
+.my-links .fa-github {
+  color: white;
+  margin: 0 5px;
+  font-size: 25px;
+}
