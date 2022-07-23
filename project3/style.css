@@ -6,14 +6,30 @@
 body {
   font-family: 'IBM Plex Sans KR', sans-serif;
 }
+.background-control {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+.bg-button {
+  padding: 0.5em 1em;
+  margin-right: 1rem;
+  border: 2px solid white;
+  outline: none;
+  background-color: #064273;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
 .container {
   width: 100%;
   min-height: 100vh;
-  background: url(../assets/p3/bg.png) center no-repeat;
+  background: url(../assets/p3/bg1.png) center no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: background 0.5s ease-in-out;
 }
 .title {
   font-size: 3rem;

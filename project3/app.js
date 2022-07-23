@@ -1,5 +1,6 @@
 const aboutButtons = document.querySelectorAll('.about-button');
 const titleElem = document.querySelector('.title');
+const bgButtons = document.querySelectorAll('.bg-button');
 
 const titleTexts = [
   '2022년 6월 29일 수요일 밤 9시 첫방송! 본방사수',
@@ -40,9 +41,18 @@ const renderTitle = (title) => {
   }
 };
 
+const handleClickBgBtn = (e) => {
+  const bgId = e.target.id;
+  const contaienr = document.querySelector('.container');
+  contaienr.style.backgroundImage = `url(../assets/p3/${bgId}.png)`;
+};
+
 function init() {
   aboutButtons.forEach((button) =>
     button.addEventListener('click', handleClickAboutBtn)
+  );
+  bgButtons.forEach((button) =>
+    button.addEventListener('click', handleClickBgBtn)
   );
 
   renderTitle(getRandomTitle());
