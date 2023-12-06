@@ -1,25 +1,19 @@
-# Creative CSS Projects
+# Vanillas
 
-<details>
-<summary>학습로그 🗒</summary>
-  
-`2022.03.26` |  <b>RESTART 🙏</b>
+> 사용스택 : `only HTML, CSS, JS`. 그래서 `바닐라스` 라고 부른다!
 
-해당 프로젝트는 지금으로부터 2년여전 코딩의 코자도 모를 때, 시작한 프로젝트였다. 그 당시 뭔가 creative한 CSS를 배워보고 싶어서 유데미 강좌를 구매하고 나서 몇개를 만들고 흐지부지되었다. 시작을 했으면 마무리를 해야겠다 싶었서, 늦었지만 다시 전체적으로 리펙토링하고 나의 creative함(?)을 첨가하여 마무리 해보고자 한다. (Github Page는 덤이닷! 😎)
+> inspired by [fff project](https://fff.cmiscm.com) 🥰
 
-</details>
+## 목표
 
-> 유데미의 [HTML, CSS, JavaScript - Build 6 Creative Projects](https://www.udemy.com/course/html-css-javascript-course-build-6-creative-projects/) 강좌를 실습하며 기록한 공간입니다.
+- 나만의 `interactive web`을 만들자.
+  - 나의 좋은 기억/경험을 웹 속에 담고 보고 싶다 라는 생각에서 시작되었다.
+- 기술적 관점 : `바닐라 스택`으로 직접 구현할 수 있는 것들은 다 만들어보자.
+  - 사용했던 패키지나 라이브러리를 직접 구현하는 짜릿함을 경험해보기.
+  - HTML, CSS, JS에서 제공해주는 최신의 API들을 이용해보자.(`state of` 시리즈 [CSS](https://2023.stateofcss.com/ko-KR/features/)/[JS](https://2022.stateofjs.com/ko-KR/features/) 참고)
 
-> [Demo](https://jjanmo.github.io/six-creative-projects/)
+## Content
 
-### WIL
+## Archive
 
-> What I Learned in these projects ⭐️
-
-- [Project1](/docs/WIL_P1.md)
-- [Project2](/docs/WIL_P2.md)
-- [Project3](/docs/WIL_P3.md)
-- [Project4](/docs/WIL_P4.md)
-- [Project5](/docs/WIL_P5.md)
-- [Project6](/docs/WIL_P6.md)
+- [OLD_README](./archive/OLD_README.md)
