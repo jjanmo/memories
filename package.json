@@ -1,0 +1,16 @@
+{
+  "name": "vanillas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "cp -r src/* . && git add . && git commit -m 'Deploy' && git push origin master"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "jjanmo",
+  "license": "ISC"
+}
