@@ -1,1 +1,0 @@
-import"./modulepreload-polyfill-9p4a8sJU.js";const e=document.querySelector(".container"),t=document.querySelector(".card");e.addEventListener("mouseover",function(o){o.stopPropagation()});t.addEventListener("mouseover",function(o){o.stopPropagation()});
