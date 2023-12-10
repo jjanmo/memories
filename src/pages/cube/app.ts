@@ -1,21 +1,21 @@
-const leftBtn = document.querySelector('.arrow-left');
-const rightBtn = document.querySelector('.arrow-right');
-const playBtn = document.querySelector('.play-pause');
-const cubes = document.querySelectorAll('.cube');
+const leftBtn = document.querySelector('.arrow-left') as HTMLDivElement;
+const rightBtn = document.querySelector('.arrow-right') as HTMLDivElement;
+const playBtn = document.querySelector('.play-pause') as HTMLDivElement;
+const cubes = document.querySelectorAll('.cube') as NodeListOf<HTMLDivElement>;
 
 let deg = 0;
 let isPlaying = false;
-let intervalId;
-let iconElem;
+let intervalId: NodeJS.Timeout;
+let iconElem: HTMLElement;
 
-const stopPlaying = (isPlaying) => {
+const stopPlaying = (isPlaying: boolean) => {
   if (isPlaying) {
     isPlaying = false;
     iconElem.className = 'fas fa-play';
     clearInterval(intervalId);
   }
 };
-const transformCubes = (deg) => {
+const transformCubes = (deg: number) => {
   cubes.forEach((cube) => (cube.style.transform = `rotateY(${deg}deg)`));
 };
 
@@ -47,7 +47,7 @@ const handleMouseoutRightBtn = () => {
   transformCubes(deg);
 };
 
-const handleClickPlayBtn = (e) => {
+const handleClickPlayBtn = () => {
   if (iconElem.className.includes('play')) {
     isPlaying = true;
     iconElem.className = 'fas fa-pause';
@@ -74,7 +74,7 @@ function init() {
 
   playBtn.addEventListener('click', handleClickPlayBtn);
 
-  iconElem = playBtn.querySelector('.fas');
+  iconElem = playBtn.querySelector('.fas')!;
 }
 
 init();

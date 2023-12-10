@@ -1,11 +1,8 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+@import url('/src/styles/global.css');
+
 body {
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
   background-color: #08aeea;
   background-image: linear-gradient(0deg, #08aeea 0%, #2af598 100%);
 }
@@ -123,70 +120,55 @@ body {
 
 /* image1 */
 .cube1 .front {
-  background: url(../assets/universe1.jpg) no-repeat 0 0;
+  background: url('/assets/images/cube_universe1.jpg') no-repeat 0 0;
   background-size: cover;
 }
 .cube2 .front {
-  background: url(../assets/universe1.jpg) no-repeat 0 -9vw;
+  background: url('/assets/images/cube_universe1.jpg') no-repeat 0 -9vw;
   background-size: cover;
 }
 .cube3 .front {
-  background: url(../assets/universe1.jpg) no-repeat 0 -18vw;
+  background: url('/assets/images/cube_universe1.jpg') no-repeat 0 -18vw;
   background-size: cover;
 }
 /* image2 */
 .cube1 .right {
-  background: url(../assets/universe2.jpg) no-repeat 0 0;
+  background: url('/assets/images/cube_universe2.jpg') no-repeat 0 0;
   background-size: cover;
 }
 .cube2 .right {
-  background: url(../assets/universe2.jpg) no-repeat 0 -9vw;
+  background: url('/assets/images/cube_universe2.jpg') no-repeat 0 -9vw;
   background-size: cover;
 }
 .cube3 .right {
-  background: url(../assets/universe2.jpg) no-repeat 0 -18vw;
+  background: url('/assets/images/cube_universe2.jpg') no-repeat 0 -18vw;
   background-size: cover;
 }
 
 /* image3 */
 .cube1 .back {
-  background: url(../assets/universe3.jpg) no-repeat 0 0;
+  background: url('/assets/images/cube_universe3.jpg') no-repeat 0 0;
   background-size: cover;
 }
 .cube2 .back {
-  background: url(../assets/universe3.jpg) no-repeat 0 -9vw;
+  background: url('/assets/images/cube_universe3.jpg') no-repeat 0 -9vw;
   background-size: cover;
 }
 .cube3 .back {
-  background: url(../assets/universe3.jpg) no-repeat 0 -18vw;
+  background: url('/assets/images/cube_universe3.jpg') no-repeat 0 -18vw;
   background-size: cover;
 }
 
 /* image4 */
 .cube1 .left {
-  background: url(../assets/universe4.jpg) no-repeat 0 0;
+  background: url('/assets/images/cube_universe4.jpg') no-repeat 0 0;
   background-size: cover;
 }
 .cube2 .left {
-  background: url(../assets/universe4.jpg) no-repeat 0 -9vw;
+  background: url('/assets/images/cube_universe4.jpg') no-repeat 0 -9vw;
   background-size: cover;
 }
 .cube3 .left {
-  background: url(../assets/universe4.jpg) no-repeat 0 -18vw;
+  background: url('/assets/images/cube_universe4.jpg') no-repeat 0 -18vw;
   background-size: cover;
-}
-
-/* my links */
-.my-links {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 100;
-  font-size: 25px;
-  padding: 1rem;
-}
-.fa-house-user,
-.fa-github {
-  color: white;
-  margin: 0 5px;
 }

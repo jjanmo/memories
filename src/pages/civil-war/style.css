@@ -1,25 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import url('/src/styles/global.css');
+
 body {
   font-family: 'Marvel', sans-serif;
 }
-.my-links {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 100;
-  font-size: 25px;
-  padding: 1rem;
-}
-.fa-house-user,
-.fa-github {
-  color: white;
-  margin: 0 5px;
-}
-
 .wrapper {
   width: 100%;
   height: 100vh;
@@ -31,7 +14,7 @@ body {
   width: 100%;
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('../assets/captain-iron1.jpg') no-repeat;
+    url('/assets/images/civilwar_captain-iron1.jpg') no-repeat;
   background-size: cover;
 }
 
@@ -197,7 +180,7 @@ body {
   width: 100%;
   height: 15vh;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('../assets/captain-iron2.jpg') no-repeat 0 0;
+    url('/assets/images/civilwar_captain-iron2.jpg') no-repeat 0 0;
   background-size: cover;
   transition: top 0.3s;
 }
@@ -257,7 +240,7 @@ body {
   width: 100%;
   height: 85vh;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('../assets/captain-iron2.jpg') no-repeat 0 -15vh;
+    url('/assets/images/civilwar_captain-iron2.jpg') no-repeat 0 -15vh;
   background-size: cover;
   transition: bottom 0.3s;
 }

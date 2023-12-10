@@ -1,8 +1,5 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import url('/src/styles/global.css');
+
 body {
   font-family: 'IBM Plex Sans KR', sans-serif;
 }
@@ -24,7 +21,7 @@ body {
 .container {
   width: 100%;
   min-height: 100vh;
-  background: url(../assets/p3/bg1.png) center no-repeat;
+  background: url('/assets/images/extraordinary-attorney_bg1.webp') center no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -294,18 +291,4 @@ body {
     flex-shrink: 0;
     margin: 0 auto 3rem;
   }
-}
-
-/* my links */
-.my-links {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 1rem;
-}
-.my-links .fa-house-user,
-.my-links .fa-github {
-  color: white;
-  margin: 0 5px;
-  font-size: 25px;
 }

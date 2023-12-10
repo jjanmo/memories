@@ -1,5 +1,5 @@
-const container = document.querySelector('.container');
-const card = document.querySelector('.card');
+const container = document.querySelector('.container') as HTMLDivElement;
+const card = document.querySelector('.card') as HTMLDivElement;
 
 container.addEventListener('mouseover', function (e) {
   e.stopPropagation();

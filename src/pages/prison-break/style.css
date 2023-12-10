@@ -1,14 +1,11 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+@import url('/src/styles/global.css');
 
 .container {
   font-family: 'Josefin Sans', sans-serif;
   width: 100vw;
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../assets/prison-break.jpg) no-repeat;
+    url('/assets/images/prison-break_bg.webp') no-repeat;
   background-size: cover;
 }
 
@@ -60,11 +57,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(
-    190deg,
-    rgba(105, 189, 234, 0.8) 50%,
-    rgba(17, 38, 82, 0.8) 0
-  );
+  background: linear-gradient(190deg, rgba(105, 189, 234, 0.8) 50%, rgba(17, 38, 82, 0.8) 0);
   border-radius: 10px;
   position: absolute;
   top: -100%;
@@ -76,6 +69,16 @@
 }
 
 .card-image {
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+  border-radius: 50%;
+  border: 2px solid white;
+  padding: 10px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+}
+
+custom-image {
   width: 150px;
   height: 150px;
   margin-top: 20px;
