@@ -4,6 +4,8 @@
 
 > inspired by [fff project](https://fff.cmiscm.com) 🥰
 
+> [Preview](https://jjanmo.github.io/memories/)
+
 ## 목표
 
 - Use HTML, CSS, Typesciprt
