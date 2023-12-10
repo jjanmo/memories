@@ -43,10 +43,10 @@
     }
   };
 
-  const handleClickBgBtn = (e: MouseEvent) => {
-    const bgId = (e.target as HTMLButtonElement).id;
-    const contaienr = document.querySelector('.container') as HTMLDivElement;
-    contaienr.style.backgroundImage = `url('/memories/assets/images/extraordinary-attorney_${bgId}.webp')`;
+  const handleClickBgBtn = () => {
+    const container = document.querySelector('.container') as HTMLDivElement;
+    container.classList.toggle('bg1');
+    container.classList.toggle('bg2');
   };
 
   function init() {

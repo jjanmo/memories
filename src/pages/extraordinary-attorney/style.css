@@ -17,16 +17,21 @@ body {
   color: white;
   border-radius: 10px;
   cursor: pointer;
+  text-transform: uppercase;
 }
 .container {
   width: 100%;
   min-height: 100vh;
-  background: url('/assets/images/extraordinary-attorney_bg1.webp') center no-repeat;
-  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   transition: background 0.5s ease-in-out;
+}
+.bg1 {
+  background: url('../../../assets/images/extraordinary-attorney_bg1.webp') no-repeat center / cover;
+}
+.bg2 {
+  background: url('../../../assets/images/extraordinary-attorney_bg2.webp') no-repeat center / cover;
 }
 .title {
   font-size: 3rem;
